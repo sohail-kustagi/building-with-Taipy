@@ -1,0 +1,12 @@
+version: "3"
+
+build:
+  builder: dockerfile
+  buildCommand: pip install -r requirements.txt
+
+deploy:
+  startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+  
+env:
+  GOOGLE_CLIENT_ID: $GOOGLE_CLIENT_ID
+  MONGODB_URL: $MONGODB_URL
