@@ -3,3 +3,8 @@ uvicorn
 pymongo
 google-auth
 yfinance
+scikit-learn
+numpy
+pandas
+python-multipart
+email-validator
